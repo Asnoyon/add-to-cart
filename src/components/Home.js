@@ -10,7 +10,13 @@ const Home = ()=>{
 
                 {data.productData.map((item,index)=>{
                     return(
-                        <ItemCard img= {item.thumb}title={item.title} desc={item.desc} price={item.price} key={index} />
+                        <ItemCard 
+                        thumb= {item.thumb}
+                        title={item.title}
+                        desc={item.desc} 
+                        price={item.price}
+                        item={item}
+                        key={index} />
                     )
                 })}
 

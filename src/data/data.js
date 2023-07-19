@@ -3,7 +3,7 @@ const data = {
     productData:[
         {
             id: 1,
-            thumb: "./img/2.jpeg",
+            thumb: "./images/img1.png",
             title: "Apple",
             desc:`Apple`,
             price:"$45"
@@ -11,10 +11,10 @@ const data = {
         },
         {
             id: 2,
-            thumb: "./img/2.jpeg",
-            title: "Apple",
-            desc:`Apple `,
-            price:"$45"
+            thumb: './images/img2.png',
+            title: "Mango",
+            desc:`Mango `,
+            price:"$65"
 
         }
     ]
