@@ -12,9 +12,10 @@ const Cart=()=> {
     removeItem,
     emptyCart
   } = useCart();
-
+  
   if(isEmpty) return <h1 className='text-center'>Your Cart is empty</h1>
   return (
+    
     <section className='py-4 container'>
       <div className='row justify-content-center'>
         <div className='col-12'>
