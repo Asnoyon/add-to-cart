@@ -22,9 +22,9 @@ const Cart=()=> {
           <h5>Cart ({totalUniqueItems}) totalItems({totalItems})</h5>
           <table className='table table-light table-hover m-0'>
             <tbody className='text-center'>
-            {items.map((item,index)=>{
+            {items.map((item)=>{
               return(
-              <tr key={index}>
+              <tr key={item.title}>
                 <td>
                 <img src={item.thumb} style={{height:'6rem'}} />
                 </td>
