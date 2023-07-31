@@ -1,14 +1,13 @@
-import React from 'react';
-import ItemCard from './ItemCard';
-import data from '../data/data'
-const Home = ()=>{
-    return(
-        <>
-            <h1 className='text-center mt-3'>All Items</h1>
-            <section className='py-4 container'> 
-                <div className='row justify-content-center'>
-
-                {data.productData.map((item,index)=>{
+import React from "react";
+import ItemCard from "./ItemCard";
+import data from "../data/data";
+const Home = () => {
+  return (
+    <>
+      <h1 className="text-center mt-3">All Items</h1>
+      <section className="py-4 container">
+        <div className="row justify-content-center">
+          {/* {data.productData.map((item,index)=>{
                     return(
                         <ItemCard 
                         thumb= {item.thumb}
@@ -18,14 +17,14 @@ const Home = ()=>{
                         item={item}
                         key={index} />
                     )
-                })}
+                })} */}
+          {data.productData.map((item) => {
+            return <ItemCard item={item} key={item.title} />;
+          })}
+        </div>
+      </section>
+    </>
+  );
+};
 
-                   
-                </div>
-
-            </section>
-        </>
-    )
-}
-
-export default Home
+export default Home;
