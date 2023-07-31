@@ -6,7 +6,8 @@ const data = {
             thumb: "./images/img1.png",
             title: "Apple",
             desc:`Apple`,
-            price:"45"
+            price:"45",
+            soldOut: false
 
         },
         {
@@ -14,7 +15,8 @@ const data = {
             thumb: './images/img2.png',
             title: "Mango",
             desc:`Mango `,
-            price:"65"
+            price:"65",
+            soldOut: true
 
         }
     ]
